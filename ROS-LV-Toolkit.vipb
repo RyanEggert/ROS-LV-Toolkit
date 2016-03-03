@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-03 10:14:18" Modified_Date="2016-03-03 15:18:16" Creator="Ryan" Comments="" ID="0945343f5d905d507f2591d5f661cc55">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-03 10:14:18" Modified_Date="2016-03-03 15:59:59" Creator="Ryan" Comments="" ID="572644820f22b869e8979d681709fe28">
   <Library_General_Settings>
     <Package_File_Name>Ryan_Eggert_lib_ROS_LV_Toolkit</Package_File_Name>
-    <Library_Version>0.1.0.4</Library_Version>
+    <Library_Version>0.1.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -105,18 +105,8 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       </Password_Overrides>
       <Namespace_Overrides>
         <Path>.</Path>
-        <Namespace_Type>Suffix</Namespace_Type>
-        <Namespace/>
-      </Namespace_Overrides>
-      <Namespace_Overrides>
-        <Path>build-messages</Path>
-        <Namespace_Type>Suffix</Namespace_Type>
-        <Namespace>_roslv</Namespace>
-      </Namespace_Overrides>
-      <Namespace_Overrides>
-        <Path>parse-messages</Path>
-        <Namespace_Type>Suffix</Namespace_Type>
-        <Namespace>_roslv</Namespace>
+        <Namespace_Type>Prefix</Namespace_Type>
+        <Namespace>rlv_</Namespace>
       </Namespace_Overrides>
       <Exclusions>
         <Path>.gitignore</Path>
@@ -251,7 +241,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>tcp-udp</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FB180CD26A8D8F57E334932C330B8130</GUID>
+      <GUID>08143DDE136B38C42A0E78E15AEC450C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -345,20 +335,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>getTimeStamp.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\getTimeStamp.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>prependLength.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -370,7 +346,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\prependLength.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>58086BD4B4DAB9E24E5EB8351198541A</GUID>
+      <GUID>79A2CCDCD580F541BEEA6684E7AAC05D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -489,7 +465,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>MessageParsing\subs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>341CEE638EBCD97A953D42F8E2113735</GUID>
+      <GUID>95E7551D2224D19D15E337B6D20EE1BE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -580,7 +556,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>tcp-udp\udp_subscribe.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EFCA1A6E456A8E80244A46263B54FFF7</GUID>
+      <GUID>EC1538FAAC22200782081129C81E9991</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -604,20 +580,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_CameraControl.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\baxter_core_msgs\add_CameraControl.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_CameraOpen.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -627,20 +589,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\baxter_core_msgs\add_CameraOpen.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_CameraSettings.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\baxter_core_msgs\add_CameraSettings.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -660,20 +608,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_EndEffectorCommand.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\baxter_core_msgs\add_EndEffectorCommand.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_HeadPan.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -683,20 +617,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\baxter_core_msgs\add_HeadPan.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_JointCommand.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\baxter_core_msgs\add_JointCommand.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -713,21 +633,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\baxter_core_msgs\add_SetSonarLights.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>AnalogOutputCommand.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\baxter_core_msgs\AnalogOutputCommand.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>A4DAB56AE132269794EA83E57B07DC9E</GUID>
+      <GUID>8651053C13DB38F23D67353ABFCDBA12</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -765,20 +671,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_Accel.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_Accel.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_AccelWithCovariance.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -788,20 +680,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\geometry_msgs\add_AccelWithCovariance.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_Inertia.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_Inertia.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -821,20 +699,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_point32.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_point32.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_pose.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -844,20 +708,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\geometry_msgs\add_pose.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_Pose2D.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_Pose2D.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -877,20 +727,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_quaternion.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_quaternion.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_Transform.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -900,20 +736,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\geometry_msgs\add_Transform.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_twist.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_twist.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -930,21 +752,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\geometry_msgs\add_vector3.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_Wrench.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\add_Wrench.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>B901C55495DB055AEE0A586E420364A0</GUID>
+      <GUID>03FE5C6323170BF39D51379AF48E080A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -968,20 +776,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_Image.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\sensor_msgs\add_Image.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_NavSatFix.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -991,20 +785,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\sensor_msgs\add_NavSatFix.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_NavSatStatus.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\sensor_msgs\add_NavSatStatus.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1021,7 +801,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\sensor_msgs\add_range.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D169FA484895095D366A665B97E82AA0</GUID>
+      <GUID>C2B9B0D8B25151401F29E9AE5495994B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1059,20 +839,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_bool.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_bool.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_colorRGBA.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1082,20 +848,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\add_colorRGBA.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_duration.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_duration.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1115,20 +867,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_float64.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_float64.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_Header.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1138,20 +876,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\add_Header.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_int16.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_int16.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1171,20 +895,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_int64.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_int64.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_int8.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1194,20 +904,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\add_int8.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_MultiArrayDimension.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_MultiArrayDimension.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1227,20 +923,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_string.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_string.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_time.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1250,20 +932,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\add_time.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_uint16.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_uint16.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1283,20 +951,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_uint64.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\add_uint64.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_uint8.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1308,7 +962,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\std_msgs\add_uint8.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>59E135337FD0562AC4DD453CD30A9973</GUID>
+      <GUID>82BA18D709817447646DF2C0A7BEC01A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1332,20 +986,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>wrap_DigitalOut.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\subs\wrap_DigitalOut.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>wrap_JointPositions.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1357,7 +997,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\subs\wrap_JointPositions.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B579FF8A71CCF8957E2F166CF889EA03</GUID>
+      <GUID>4A8D4AB3A12C073DFAB18573CFE76B01</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -1381,20 +1021,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_AccelStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_AccelStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_AccelWithCovarianceStamped.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1404,20 +1030,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\geometry_msgs\stamped\add_AccelWithCovarianceStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_InertiaStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_InertiaStamped.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1437,20 +1049,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_pose_stamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_pose_stamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_PoseWithCovarianceStamped.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1460,20 +1058,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\geometry_msgs\stamped\add_PoseWithCovarianceStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_QuaternionStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_QuaternionStamped.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1493,20 +1077,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_TwistStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_TwistStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>add_Vector3Stamped.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1518,21 +1088,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\geometry_msgs\stamped\add_Vector3Stamped.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>add_WrenchStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\geometry_msgs\stamped\add_WrenchStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>8A4AE4440F965E6D2221BCD10416A72D</GUID>
+      <GUID>0BDE4E41D1CC7A60050190171CD859FD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -1556,20 +1112,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>boolArray.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\boolArray.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>boolScalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1579,20 +1121,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\boolScalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>durationArray.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\durationArray.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1612,20 +1140,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>float32Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\float32Array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>float32Scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1635,20 +1149,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\float32Scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>float64Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\float64Array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1668,20 +1168,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>i16Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\i16Array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>i16Scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1691,20 +1177,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\i16Scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>i32Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\i32Array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1724,20 +1196,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>i64Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\i64Array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>i64Scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1747,20 +1205,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\i64Scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>i8Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\i8Array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1780,20 +1224,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>stringArray.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\stringArray.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>stringScalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1803,20 +1233,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\stringScalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>timeArray.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\timeArray.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1836,20 +1252,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>u16Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\u16Array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>u16Scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1859,20 +1261,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\u16Scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>u32Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\u32Array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1892,20 +1280,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>u64Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>5</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\u64Array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>u64Scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -1915,20 +1289,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>build-messages\std_msgs\subs\u64Scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>u8Array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>5</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\u8Array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -1945,21 +1305,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\std_msgs\subs\u8Scalar.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>udp_publisher.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>5</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>build-messages\std_msgs\subs\udp_publisher.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>42EEC921BEA1F5E778FA386DBA5DE80A</GUID>
+      <GUID>1AD0919E688BF559CC1D959685CCD529</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1983,20 +1329,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>head_state_parse.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\baxter_core_messages\head_state_parse.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_analog_output_state.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2006,20 +1338,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\baxter_core_messages\parse_analog_output_state.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_assembly_state.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\baxter_core_messages\parse_assembly_state.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2039,20 +1357,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_digital_io_state.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\baxter_core_messages\parse_digital_io_state.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_EndEffectorState.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2062,20 +1366,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\baxter_core_messages\parse_EndEffectorState.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_endpoint_state.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\baxter_core_messages\parse_endpoint_state.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2095,20 +1385,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_list_cameras.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\baxter_core_messages\parse_list_cameras.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_solve_position_ik_resp.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2120,7 +1396,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\baxter_core_messages\parse_solve_position_ik_resp.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5FAB470FC66933903C989876AA328CC5</GUID>
+      <GUID>DFED120E6F027859CA7CAE112CB16725</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2144,20 +1420,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>PRY_to_Quat.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\conversions\PRY_to_Quat.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Quat_to_PRY.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2169,7 +1431,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\conversions\Quat_to_PRY.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C2BF1D536D68F2F569AA422E2D059D3E</GUID>
+      <GUID>7DCE5CAA6BCE53715F0EC72E735294EA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2207,20 +1469,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_accel.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_accel.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_AccelWithCovariance.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2230,20 +1478,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\geometry_msgs\parse_AccelWithCovariance.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_Inertia.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_Inertia.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2263,20 +1497,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_point32.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_point32.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_pose.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2286,20 +1506,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\geometry_msgs\parse_pose.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_Pose2D.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_Pose2D.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2319,20 +1525,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_quaternion.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_quaternion.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_Transform.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2342,20 +1534,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\geometry_msgs\parse_Transform.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_twist.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_twist.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2375,20 +1553,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_vector3.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\parse_vector3.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_wrench.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2400,7 +1564,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\geometry_msgs\parse_wrench.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FFD9153B0B7667C661C40C568690E279</GUID>
+      <GUID>FDA731FE72F8C14B93A30B1A642F34A0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2421,21 +1585,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>MessageParsing\nav_msgs</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_Odometry.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\nav_msgs\parse_Odometry.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>3C79A6AB1768939A23DE63D940CB644A</GUID>
+      <GUID>74BBADDF28170DDC43517BE49405F522</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2459,20 +1609,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_channel_float32.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\sensor_msgs\parse_channel_float32.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_image.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2482,20 +1618,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\sensor_msgs\parse_image.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_joint_state.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\sensor_msgs\parse_joint_state.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2512,21 +1634,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\sensor_msgs\parse_point_cloud.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_range.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\sensor_msgs\parse_range.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>8D80C960D3432366AF684A7124E4478C</GUID>
+      <GUID>F921EF1330D9B3ACDF4E00FC29B1B6F0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2564,20 +1672,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_bool.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_bool.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_colorRGBA.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2587,20 +1681,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\parse_colorRGBA.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_duration.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_duration.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2620,20 +1700,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_float64.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_float64.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_header.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2643,20 +1709,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\parse_header.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_int16.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_int16.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2676,20 +1728,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_int64.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_int64.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_int8.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2699,20 +1737,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\parse_int8.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_MultiArrayDimension.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_MultiArrayDimension.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2732,20 +1756,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_primitive.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_primitive.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_string.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2755,20 +1765,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\parse_string.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_time.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_time.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2788,20 +1784,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_uint32.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_uint32.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_uint64.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2813,21 +1795,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\std_msgs\parse_uint64.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_uint8.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\parse_uint8.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>59B60BD9A9F883F0908A30445638F08C</GUID>
+      <GUID>D38FCA852A833A3A6B98E3279171BC7D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2851,20 +1819,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>getArrayLength.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\subs\getArrayLength.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>jointStatesUnits.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2874,20 +1828,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\subs\jointStatesUnits.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>MsgExists.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\subs\MsgExists.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2904,21 +1844,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\subs\parseErrorCheck.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>service_error_parse.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\subs\service_error_parse.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>D33F7814010A6553A8FB83946EBB5D23</GUID>
+      <GUID>10B6DC7EA96CA5D1D6FBEF8C41CE0B03</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>13</Parent_Palette_Index>
@@ -2942,20 +1868,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_AccelStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\stamped\parse_AccelStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_AccelWithCovarianceStamped.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -2965,20 +1877,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\geometry_msgs\stamped\parse_AccelWithCovarianceStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_InertiaStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\stamped\parse_InertiaStamped.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -2998,20 +1896,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_QuaternionStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\stamped\parse_QuaternionStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_TransformStamped.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3021,20 +1905,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\geometry_msgs\stamped\parse_TransformStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_TwistStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\stamped\parse_TwistStamped.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3051,21 +1921,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\geometry_msgs\stamped\parse_Vector3Stamped.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_WrenchStamped.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\geometry_msgs\stamped\parse_WrenchStamped.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>68B1196EBF2EF69215971BAF3F4E6D4B</GUID>
+      <GUID>0CD7CBCDB95F209CBEBD891B44BF0965</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>16</Parent_Palette_Index>
@@ -3089,20 +1945,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_bool_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_bool_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_bool_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3112,20 +1954,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_bool_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_duration_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_duration_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3145,20 +1973,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_float32_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_float32_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_float32_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3168,20 +1982,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_float32_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_float64_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_float64_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3201,20 +2001,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_i16_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_i16_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_i16_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3224,20 +2010,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_i16_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_i32_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_i32_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3257,20 +2029,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_i64_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_i64_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_i64_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3280,20 +2038,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_i64_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_i8_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_i8_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3313,20 +2057,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_string_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>3</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_string_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_string_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3336,20 +2066,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_string_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_time_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_time_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3369,20 +2085,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_u16_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_u16_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_u16_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3392,20 +2094,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_u16_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_u32_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>4</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_u32_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3425,20 +2113,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_u64_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>5</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_u64_array.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>parse_u64_scalar.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3448,20 +2122,6 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         </Position>
         <Icon>00000000</Icon>
         <Path>parse-messages\std_msgs\subs\parse_u64_scalar.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>parse_u8_array.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>5</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>parse-messages\std_msgs\subs\parse_u8_array.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3478,7 +2138,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\std_msgs\subs\parse_u8_scalar.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>86439C9FF570D710FA4BCBC244C7CC21</GUID>
+      <GUID>200D56BA8B8169DFDC467D37E477100E</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -3513,7 +2173,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>846AECF616BF599767A6B4A90A2AC6AD</GUID>
+      <GUID>602337AC1B04E550376E129B8B59E2FB</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -3604,7 +2264,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs\udp_subscriber.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0804D5598FDDBA73F8461F32EFF90996</GUID>
+      <GUID>871F4A1E9F56BF874DD506261E27F136</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -3639,7 +2299,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs\msgs\NavSatStatus.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2163C085B2156F1C312632E937E573C9</GUID>
+      <GUID>FF33F2507E3BFAC338A974528AD1DD83</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
