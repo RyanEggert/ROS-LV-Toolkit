@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-03 10:14:18" Modified_Date="2016-03-13 21:24:17" Creator="Ryan" Comments="" ID="0dc317a489761411ad05bd5e6b8d6678">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2016-03-03 10:14:18" Modified_Date="2016-04-26 14:05:37" Creator="Ryan" Comments="" ID="68a287d2481f97f81d7ffb028637157f">
   <Library_General_Settings>
     <Package_File_Name>Ryan_Eggert_lib_ROS_LV_Toolkit</Package_File_Name>
-    <Library_Version>0.1.0.6</Library_Version>
+    <Library_Version>0.1.0.7</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>..</Library_Output_Folder>
+    <Library_Output_Folder>DIST</Library_Output_Folder>
     <Company_Name>Ryan Eggert</Company_Name>
     <Library_Summary/>
     <Library_License/>
@@ -34,7 +34,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
       <Copyright/>
       <Packager>Ryan Eggert</Packager>
       <URL>https://github.com/RyanEggert/ROS-LV-Toolkit</URL>
-      <Release_Notes>Initial release. Still testing and debugging.</Release_Notes>
+      <Release_Notes>Adding PointCloud builder + support builders.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -241,7 +241,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>tcp-udp</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C13E9FF74B70713E59C7983455018602</GUID>
+      <GUID>7C9CD0427DEFBD215181E3B0F54FBBF5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -374,7 +374,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\prependLength_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6D63C9DCD26A00438AB4480301BF3D14</GUID>
+      <GUID>79F1C083CC5BAB7990310958739611D2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -493,7 +493,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\conversions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5E1EFC3A228CE1D93704DF5EDC97CB00</GUID>
+      <GUID>505541292353063D55DA62006E689CEF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -584,7 +584,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>tcp-udp\udp_subscribe.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>12F9848E9051E86177DDBF760BEE4457</GUID>
+      <GUID>F3815FBE32A3E63E163314526345D23A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -731,7 +731,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\baxter_core_msgs\AnalogOutputCommand_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CC2D6F73429442690C5F464E24781C55</GUID>
+      <GUID>0E0FB30D8EBE2CD938EDEDF07155DE97</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -948,7 +948,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\geometry_msgs\stamped</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E18AF068916FAE6DF6837B120768B884</GUID>
+      <GUID>9AF0684D0E8F2179CFD983D77454FE0D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -1123,7 +1123,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\geometry_msgs\stamped\add_WrenchStamped_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D50CF2DD6560E771E3A7165B3B1F6EA9</GUID>
+      <GUID>7265FD94CA31DBBC6232183619281A01</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1200,7 +1200,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\sensor_msgs\add_range_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C54977AA25BB3E2AD3DCEAD16366A368</GUID>
+      <GUID>5245C7B414F3341FFCE22F8F09E91E6C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1501,7 +1501,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\std_msgs\subs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2491BA0B7A428A4615519FFFC3872003</GUID>
+      <GUID>2CFFB610896A64B54C5929D0137283B9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -1914,7 +1914,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\std_msgs\subs\u8Scalar_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A3E347F9DD49228FF1EB50C7CAFECCB4</GUID>
+      <GUID>9A6A7912BC408EB9E8A2020722E77BB9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1963,7 +1963,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>build-messages\subs\wrap_JointPositions_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>794016039253B0BEF4540211A08E5F3B</GUID>
+      <GUID>C636F1E898EF53FDD648BB60CF16E0A0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2124,7 +2124,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\baxter_core_messages\parse_solve_position_ik_resp_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>33F7563781CB1CFA4FBD5940AF11A8C8</GUID>
+      <GUID>11CD489F3168C67644267A194B397E05</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2173,7 +2173,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\conversions\Quat_to_PRY_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2495540DBEAF7A7EA7E5761B0C2E0109</GUID>
+      <GUID>0C9C98187C428FF4601E2D47760BF89F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2264,7 +2264,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\subs\service_error_parse_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B9C251DDD23A05EF42C65B1DA8910804</GUID>
+      <GUID>94799F2095B8FBD81596DA25C95C200D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2495,7 +2495,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\geometry_msgs\stamped</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F76D08BF0E9EC85BD8FC6C74FB2695A8</GUID>
+      <GUID>0D62A3FDE4CBA2D898624E33F5AE23F0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2530,7 +2530,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\nav_msgs\parse_Odometry_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D58E2540ADAC5094163C75BCC4F1A5F4</GUID>
+      <GUID>8D3C122EE4D3BB4EE4943BECCEF6B978</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2621,7 +2621,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\sensor_msgs\parse_range_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DF08C9E72E5B7EFF6E2D33B737BED115</GUID>
+      <GUID>60E6CA039E9D22F48CC9ED1698C66B77</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2922,7 +2922,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\std_msgs\subs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>220FECCC9058D3887FDFEB436CB99EB3</GUID>
+      <GUID>44B9A5EC013005C169A472595ED3D16B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>17</Parent_Palette_Index>
@@ -3335,7 +3335,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\std_msgs\subs\parse_u8_scalar_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AD13E0F561EB5695CD4E97F300998BE2</GUID>
+      <GUID>BB4122C005C7D243027F991EEDF933D5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>14</Parent_Palette_Index>
@@ -3482,7 +3482,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>parse-messages\geometry_msgs\stamped\parse_WrenchStamped_roslv.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F07995FC91B80107A905EA86B209F0DA</GUID>
+      <GUID>1A6350EEC7230175DD2CD922C6A80FE5</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -3517,7 +3517,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7CA707F9E58B535F00A07D57DC5987BC</GUID>
+      <GUID>761E1C41C1BA65C1B2509AEEC7D5C582</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -3608,7 +3608,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs\udp_subscriber.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>29F1D63576D71D56C908225E281DEE03</GUID>
+      <GUID>7CFCF31A9D5EFFD88F1AD5CAACA164C6</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -3643,7 +3643,7 @@ Message generation and message parsing VIs are taken and adapted from VIs develo
         <Path>typedefs\msgs\NavSatStatus.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FEABF89C6F7A83B88DC83E37C9C81FCC</GUID>
+      <GUID>8D727E3C2EF2876F03978365A92FACF9</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
